@@ -26,8 +26,10 @@ body {
   width: 226.46px;
   height: 1302.47px;
   left: 184.26px;
+  background: -webkit-linear-gradient(180deg, #478bf9 0%, rgba(71, 139, 249, 0.4) 100%);
   background: linear-gradient(180deg, #478bf9 0%, rgba(71, 139, 249, 0.4) 100%);
   opacity: 0.55;
+  -webkit-filter: blur(150px);
   filter: blur(150px);
   transform: rotate(-54.31deg);
 }
@@ -37,6 +39,7 @@ body {
   height: 574px;
   left: calc(50% - 574px / 2 + 832px);
   top: 682px;
+  background: -webkit-linear-gradient(255.96deg, #478bf9 0%, #9dadf2 100%);
   background: linear-gradient(255.96deg, #478bf9 0%, #9dadf2 100%);
   opacity: 0.7;
   filter: blur(325px);
@@ -225,6 +228,7 @@ body {
   align-self: flex-start;
 }
 .banner__container {
+  will-change: transform;
   width: 100px;
   height: 1026px;
   position: relative;
@@ -235,6 +239,7 @@ body {
   gap: 20px;
 }
 .banner__items {
+  will-change: transform;
   flex-shrink: 0;
   display: flex;
   flex-direction: column;
@@ -255,6 +260,7 @@ body {
   animation-direction: reverse;
 }
 .area {
+  will-change: transform;
   width: 531px;
   height: 595px;
   border-radius: 100px;
@@ -384,7 +390,9 @@ body {
   height: 32px;
   z-index: 5;
 }
-
+.socials-area__link_hover {
+  fill: #478bf9;
+}
 .horizontal,
 .buttons-small {
   display: none;
@@ -408,9 +416,6 @@ body {
   }
   .area__item:hover {
     background: #478bf9;
-  }
-  .socials-area__link_hover {
-    fill: #478bf9;
   }
   .socials-area__link:hover svg use {
     fill: url(#gradient);
